@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+@-moz-document url-prefix() {
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+}
+
+
+
+/*PokeCard*/
+
+.pokeCard{
+    ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: darkgray;
+    margin: 10px;
+    border: black 1px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+header, footer {
+    background-color: grey;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid #ccc;
+}
+
+footer {
+    border-top: 1px solid #ccc;
+    background-color: grey;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+footer img {
+    margin: 0 25px;
+    width: 20px;
+    height: 40px;
+}
+
+footer input {
+    border-radius: 10px;
+    text-align: center;
+    width: 40px;
+}
+
+
+
+header img {
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+header h1{
+    font-size: 45px;
+    float: right;
+}
+
+
+.pokeMain{
+    background: grey;
+}
+
+.pokeCard h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    text-transform: capitalize;
+    margin: 10px;
+}
+.pokeCard:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    margin: 10px;
+    background: lightgray;
+}
+
+.pokeList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
